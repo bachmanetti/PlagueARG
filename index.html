@@ -40,7 +40,7 @@ $().ready(function() {
 });
 function ParseData(Entries){
   console.log(Entries);
-  $("#DebugOutput").html(Entries.length);
+  $("#DebugOutput").html("Entries Found: " + Entries.length);
   Entries.forEach(element => {
     var EID = element.gsx$id.$t
     var TempHtml = '<div class="Piece" title="ID:' + EID + ' Row:' + Math.floor(Number(EID)/16) + ' Col:' + (Number(EID) % 16) + '" style="top: ' + Math.floor(Number(EID)/16) * 40 + 'px; left: ' + ((Number(EID) % 16) * 40) + 'px;">';
@@ -54,6 +54,7 @@ function ParseData(Entries){
 </script>
 </head>
 <body>
+  <div>Source Data: <a href="https://docs.google.com/spreadsheets/d/1cQ7usd1qAsDJwqlgVhowgQeMQPvPT98YDGpC-wVDLSg/edit?usp=sharing" target="_blank">Google Sheet for Season of the Plague ARG</a></div>
   <div id="DebugOutput">Loading....</div>
   <div id="DisplayGrid"></div>
 </body>
