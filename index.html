@@ -9,5 +9,8 @@ header {
 <script>
 $().ready(function() {
    $("#DebugOutput").html("Success.");
+    $.getJSON({"https://spreadsheets.google.com/feeds/cells/1cQ7usd1qAsDJwqlgVhowgQeMQPvPT98YDGpC-wVDLSg/1/public/full?alt=json", function(data) {
+      $("#DebugOutput").html(JSON.stringify(data));
+    });
 });
 </script>
