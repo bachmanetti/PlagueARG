@@ -1,10 +1,3 @@
-## Bach's Page
+##Bachmanetti's test Season of The Plague ARG display tool
 
-<div id="DebugOutput">Loading....</div>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script>
-$().ready(function() {
-   $("#DebugOutput").html("Success.");
-});
-</script>
+Uses data from Google sheets to display the current solution status
